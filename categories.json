@@ -4,5 +4,12 @@
     "description": "Chicken Coops and other disasters"
     }, {
     "description": "Human Coops and Roommates"
-      }]
+      }],
+  "listings": [{
+    "title": DS.attr(),
+    "timePosted": DS.attr(),
+    "content": DS.attr(),
+    "location": DS.attr(),
+    "image": DS.attr()
+    }]
 }
