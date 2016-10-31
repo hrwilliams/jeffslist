@@ -1,4 +1,12 @@
 <h2>{{model.description}}</h2>
 
 
+  {{#each model.listings as |listing|}}
+    <br>
+    <h3>{{listing.title}}</h3>
+    <h5>{{listing.timePosted}}</h5>
+    <br>
+  {{/each}}
+
+
 {{new-listing category=model saveListing2="saveListing3"}}

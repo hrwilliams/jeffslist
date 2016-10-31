@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         content: this.get('content') ? this.get('content') : "",
         location: this.get('location') ? this.get('location') : "",
         image: this.get('image') ? this.get('image') : "",
-        timePosted: moment().format('LL'),
+        timePosted: moment().format('MMMM Do YYYY, h:mm:ss a'),
         category: this.get('category')
       };
       this.sendAction('saveListing2', params);
