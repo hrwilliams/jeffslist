@@ -5,6 +5,6 @@ export default DS.Model.extend({
   timePosted: DS.attr(),
   content: DS.attr(),
   location: DS.attr(),
-  image: DS.attr()
-  category: DS.belongsTo('category', { async: true }),
+  image: DS.attr(),
+  category: DS.belongsTo('category', { async: true })
 });

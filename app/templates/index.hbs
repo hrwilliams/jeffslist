@@ -2,6 +2,6 @@
 
 <ul>
   {{#each model.categories as |category|}}
-    <li>{{category.description}}</li>
+    <li>{{#link-to 'category' category.id}}{{category.description}}{{/link-to}}</li>
   {{/each}}
 </ul>
